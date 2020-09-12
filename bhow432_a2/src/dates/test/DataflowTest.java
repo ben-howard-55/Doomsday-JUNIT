@@ -22,6 +22,13 @@ public class DataflowTest {
 	 * the day is a doomsday or when the ordinality of the anchor day 
 	 * and the days until doomsday are equal in magnitude 
 	 * and days until doomsday is negative (before doomsday date).
+	 * 
+	 * Hence, it is a rare circumstance that will not happen often,
+	 * but still can happen. Hence, the du-path adds to the quality
+	 * as it tests something new and something that could of been
+	 * not otherwise tested or thought about by the developer 
+	 * and wouldn't have been by branch coverage or 
+	 * EQUIVALENCE CLASS TEST.
 	 */
 
 	@Rule
