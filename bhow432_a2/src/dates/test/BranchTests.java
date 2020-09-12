@@ -17,6 +17,14 @@ import dates.Dates.Day;
 
 public class BranchTests {
 	
+	/**
+	 * A note on branch coverage:
+	 * On line 92; The for loop - if reached - has to match a month from 1 to 12,
+	 * due to previous checks and validations of the month value.
+	 * This means that the branch in which the for loop is not broken does not exist.
+	 * Hence, #dates.Dates cannot have full statement coverage. 
+	 */
+	
 	@Rule
 	public Timeout globalTimeout = Timeout.millis(100);
 	
@@ -90,8 +98,8 @@ public class BranchTests {
 	 */
 	@Test
 	public void testNormalYearWithValidDays() {
-			Day day = dates.Dates.dayOfWeek(2007, 7, 7);
-			assertEquals(Day.Saturday, day);
+			Day day = dates.Dates.dayOfWeek(2011, 12, 12);
+			assertEquals(Day.Monday, day);
 	}
 	
 	/**
