@@ -43,7 +43,7 @@ public class BranchTests {
 	}
 	
 	/**
-	 * Year is a multiple of 100 (is a leap year)
+	 * Year is a multiple of 100 (not a leap year)
 	 * and has invalid day and month.
 	 */
 	@Test
