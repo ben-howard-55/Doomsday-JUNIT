@@ -44,7 +44,7 @@ public class BranchTests {
 	
 	/**
 	 * Year is a multiple of 100 (not a leap year)
-	 * and has invalid day and month.
+	 * and has invalid day and month. (not valid)
 	 */
 	@Test
 	public void testYearMultipleOf100andInvalidDayAndMonth() {
@@ -58,7 +58,7 @@ public class BranchTests {
 	
 	/**
 	 * Year is a multiple of 4 (is a leap year)
-	 * and is 2nd Month, but has too many days (invalid).
+	 * and is 2nd Month, but has too many days (not valid).
 	 */
 	@Test
 	public void testYearMultipleOf4and2MonthInvalid() {
@@ -83,7 +83,7 @@ public class BranchTests {
 	
 	/**
 	 * Year is a multiple of 4 (is a leap year)
-	 * and is 8nd Month with valid days
+	 * and is 8th Month with valid days
 	 * and day position is greater than 0.
 	 */
 	@Test
@@ -104,7 +104,7 @@ public class BranchTests {
 	
 	/**
 	 * Year is a not a leap year and is 5th Month,
-	 * with invalid number of days.
+	 * with invalid number of days. (not valid)
 	 */
 	@Test
 	public void testNormalYearAndInvalidNumberOfDays() {
@@ -118,7 +118,7 @@ public class BranchTests {
 	
 	/**
 	 * Year is a not a leap year and
-	 * month which is greater than 12 (invalid).
+	 * month which is greater than 12. (not valid)
 	 */
 	@Test
 	public void testNormalYearAndInvalidMonthGt() {
@@ -132,7 +132,7 @@ public class BranchTests {
 	
 	/**
 	 * Year is a not a leap year and
-	 * month which is less than 1 (invalid).
+	 * month which is less than 1. (not valid)
 	 */
 	@Test
 	public void testNormalYearAndInvalidMonthLeq() {
@@ -147,7 +147,7 @@ public class BranchTests {
 	/**
 	 * Year is a not a leap year and
 	 * month which is valid and
-	 * day which is less than 1 (invalid).
+	 * day which is less than 1. (not valid)
 	 */
 	@Test
 	public void testNormalYearAndInvalidDayLeq() {
